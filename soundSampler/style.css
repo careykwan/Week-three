@@ -1,0 +1,61 @@
+#background-image {
+    background-image: url("forrest.jpg");
+    height: 590px;
+  	background-repeat: no-repeat;
+  	background-position: center;
+  
+   
+}
+
+#instruments {
+	width: 100vh;
+	height: 100vh;
+	position: relative;
+
+}
+
+#violin {
+	position: absolute;
+	top: -230px;
+	left: 150px;
+	height: 150px;
+}
+
+#drums {
+	position: absolute;
+	top: -400px;
+	left: 600px;
+	height: 350px;
+}
+
+#cymbal {
+	position: absolute;
+	top: -250px;
+	left: 1200px;
+	height: 120px;
+}
+
+#sax {
+	position: absolute;
+	top: -430px;
+	left: 1200px;
+	height: 250px;
+	transform: rotate(340deg);
+}
+
+#guitar {
+	position: absolute;
+	top: -370px;
+	left: 400px;
+	height: 100px;
+	transform: rotate(290deg);
+}
+
+#piano {
+	position: absolute;
+	top: -370px;
+	left: 400px;
+	height: 100px;
+	
+}
+

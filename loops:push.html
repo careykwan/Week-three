@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Loops review</title>
+</head>
+<body>
+
+<h1 class="heading">This is the DOM</h1>
+
+<h2 class="second"> This is another heading</h2>
+
+<ul>
+	<li>apple</li>
+	<li>banana</li>
+	<li>straw</li>
+	<li>pear</li>
+	<li>grape</li>
+</ul>	
+
+<input name="what">
+
+<p id="para">.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt deleniti, ut totam voluptas tempore voluptatum. Magni voluptatum unde soluta quo, cumque non cupiditate amet dolore. Accusantium ducimus omnis cumque possimus.</p>
+
+<script>
+	//This is my iife
+	(function(){
+	//This is my array full of stuff/data
+	var meatArray = ["ham", "chicken", "sausage", "beef", "salami"];
+	//This is my new array which I have given a new name
+	var newArray = [];
+	//This is grabbing the DoM and requesting id #para
+	var para = document.getElementById('para');
+
+	console.dir(para.innerHTML);
+
+
+	console.dir(meatArray);
+
+	//This is my loop
+	for (var i=0, max=5; i < max; i++) {
+	//This is my push method, pushing my meat array which is chicken[1]
+	  newArray.push(meatArray[1]);
+	 //This is my code telling it to display in the dom, it is displaying my push array with a space
+	  para.innerHTML += (newArray + " ");
+	  console.log(newArray + " This is new array");
+
+	 }
+	// setInterval(function(){
+	// h1.style.color = "pink"()}, 3000)
+
+
+	
+	//This is the end of my array
+	}());
+
+	
+
+
+	
+	// 	all[i].className = "what";
+	
+</script>
+	
+</body>
+</html>

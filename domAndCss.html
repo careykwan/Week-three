@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Loops review</title>
+</head>
+<body>
+
+<h1 id="heading">This is the DOM</h1>
+
+<h2 class="second"> This is another heading</h2>
+
+<ul>
+	<li class="list">apple</li>
+	<li class="list">banana</li>
+	<li class="list">straw</li>
+	<li class="list">pear</li>
+	<li class="list">grape</li>
+</ul>	
+
+<input name="what">
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt deleniti, ut totam voluptas tempore voluptatum. Magni voluptatum unde soluta quo, cumque non cupiditate amet dolore. Accusantium ducimus omnis cumque possimus.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt deleniti, ut totam voluptas tempore voluptatum. Magni voluptatum unde soluta quo, cumque non cupiditate amet dolore. Accusantium ducimus omnis cumque possimus.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt deleniti, ut totam voluptas tempore voluptatum. Magni voluptatum unde soluta quo, cumque non cupiditate amet dolore. Accusantium ducimus omnis cumque possimus.</p>
+
+<script>
+	//This is an iifee - the start of your function
+	(function(){
+	//This is you creating your own variable name, then grabbing the dom by class name
+	var targetList = document.getElementsByClassName("list");
+	// console.dir(all);	
+	//this is the start of your loop, you are telling it loop through all your list items 
+	for (var i=0, max=targetList.length; i < max; i++) {
+		//Do something with the element here, this loops through all the list and assigns them to green
+		targetList[i].style.color = "green"
+	}
+	
+	var myHeading = document.getElementsByName("what");
+	
+	for	(var i=0, max=myHeading.length; i < max; i++) {
+		//Do something with the element here
+		myHeading[i].style.backgroundColor = "red"
+	}
+
+	var paragraphs = document.getElementsByTagName("p");
+
+	for (var i=0, max=paragraphs.length; i < max; i++) {
+		paragraphs[i].style.fontSize = "50px"
+	}
+	 }());//the end of the function
+	
+</script>
+	
+</body>
+</html>

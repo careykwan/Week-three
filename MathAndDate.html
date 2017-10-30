@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math and date</title>
+</head>
+<body>
+
+<p id="demo"></p>
+
+<h1 id="demoAgain"></h1>
+D
+
+<script>
+    //This is the start of my Iifee - very start of the function
+    (function(){
+
+    //This is the start of the first function
+    function functionOne(paramaterString){
+    var maths = Math.pow(8,2);
+    document.getElementById("demo").innerHTML = paramaterString + maths;
+    }
+    //This is the trigger for the first function
+    functionOne("This returns the value of x to the power of y = ")
+
+    //This is the start of the second function
+    function functionTwo(){
+    var date = new Date();
+    document.getElementById("demoAgain").innerHTML = "This is the current date" + " " + date;
+    }
+    //This is the trigger for the 2nd function
+    functionTwo();
+    //This is the end of an Iifee
+    }());
+    
+
+</script>
+    
+</body>
+</html>
